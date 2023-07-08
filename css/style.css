@@ -1,0 +1,129 @@
+:root{
+    --darkColor:#19283f;
+    --greenColor:#33d1cc;
+    --secColor:#eff7fa;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 1000px;
+}
+
+/* start navbar */
+
+.navbar{
+    background-color: var(--darkColor);
+}
+.navbar .navbar-nav .nav-link:active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .search .btn .icon:hover,
+.gallery .nav .nav-item .nav-link:hover{
+    color: var(--greenColor)
+}
+.navbar .search .btn .icon{
+    color: white;
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--greenColor);
+}
+/* endn navbar */
+
+.landing{
+    background-color: var(--darkColor);
+    min-height: calc(100vh - 72px);
+}
+
+.main-titles::after{
+    content: '';
+    position: absolute;
+    background-color: var(--greenColor);
+    height: 2px;
+    width: 120px;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
+
+.features .icons-holder{
+    height: 200px;
+}
+.features .icons-holder svg{
+    transform: translateX(-50%);
+}
+.features .icons-holder .number{
+    color: var(--secColor);
+}
+.features .icons-holder .icon{
+    color: var(--greenColor);
+
+}
+.gallery{
+    background-color: var(--secColor);
+}
+.gallery .nav .nav-item .nav-link{
+    color: var(--darkColor);
+}
+.contant{
+    overflow: hidden;
+}
+.box{
+    background: #33d1cc;
+    transform: translateX(-100%);
+    overflow:hidden;
+    opacity: 0%;
+}
+.contant p{
+    opacity: 0%; 
+}
+.contant:hover .box{
+    content: '';
+    opacity: 50%;
+    transform: translateX(0);
+    transition: .5s;
+
+}
+.contant:hover p{
+    opacity: 100%;
+    transition: .5s;
+
+}
+.stuff-text{
+    max-width: 500px;
+}
+.team{
+    background-color: var(--secColor);
+}
+.team h3{
+    color: #19283f;
+}
+.team .info-box{
+    background-color: rgba(51, 209, 204, .7);
+    transform: translateY(85%);
+}
+.team .info-box:hover{
+    transform: translateY(0);
+    transition: .4s;
+}
+.subscribe{
+    background-color: #ffc400;
+}
+.subscribe input::placeholder{
+    color: #eff7fa;
+}
+
+.subscribe input:focus{
+    outline: none;
+}
+.footer{
+    background: var(--darkColor);
+}
+.footer .icons li i{
+    background-color: #ffc400;
+}
+
+
